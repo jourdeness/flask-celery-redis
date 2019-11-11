@@ -1,25 +1,17 @@
-# flask-celery-fs-sqlite
-Example of using Celery with Filesystem Broker and SQLite3 to store back-end results
+# flask-celery-redis
+Example of using Flask with Celery and Redis
 
 ## Instructions
-1. pip install -r requirements.txt in your virtual environment
-2. If using a windows os
+1. Must have docker installed (docker for desktop).
+2. CD into the root of the project
+3. Create a .env file with the following env variables. Place it in the root directory (same level as docker-compose.yaml).
    ```
-   pip install pywin32==223 
-   ``` 
-3. Launch flask on one terminal
-  ```
-  python wsgi_app.py 
-  ```
-4. Launch celery on another terminal
-```
-celery worker -A wsgi_app.celery --loglevel=info --pool=solo
-```
-
-## Task Submission
-![Task Submission](https://quantmill.s3.eu-west-2.amazonaws.com/github/celery-sqlite.pngG)
-
-## Database Results
-![Celery Results](https://quantmill.s3.eu-west-2.amazonaws.com/github/celery-results.PNG)
-
-
+   COMPOSE_PROJECT_NAME=flask_celery_redis
+   PYTHONUNBUFFERED=true
+   ```
+4. Build the containers
+   ```
+   docker-compose up --build
+   ```
+## Sample Screenshot 
+https://quantmill.s3.eu-west-2.amazonaws.com/github/flask-celery-redis.PNG
