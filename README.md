@@ -14,4 +14,5 @@ Example of using Flask with Celery and Redis
    docker-compose up --build
    ```
 ## Sample Screenshot 
-https://quantmill.s3.eu-west-2.amazonaws.com/github/flask-celery-redis.PNG
+![Flask-Celery-Redis](https://quantmill.s3.eu-west-2.amazonaws.com/github/flask-celery-redis.PNG)
+
