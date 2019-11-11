@@ -6,6 +6,6 @@ celery = Celery(app.import_name,
                     include=CELERY_TASK_LIST)
 """
 
-CELERY_TASK_LIST = (
-    'main_app.blueprints.pages.tasks',
-)
+CELERY_TASK_LIST = [
+    'src.blueprints.pages.tasks',
+]

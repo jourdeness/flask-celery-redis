@@ -1,4 +1,4 @@
-from main_app.app import celery_app
+from src.app import celery_app
 import random
 
 celery = celery_app
