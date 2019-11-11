@@ -13,6 +13,10 @@ Example of using Flask with Celery and Redis
    ```
    docker-compose up --build
    ```
+   
 ## Sample Screenshot 
 ![Flask-Celery-Redis](https://quantmill.s3.eu-west-2.amazonaws.com/github/flask-celery-redis.PNG)
+
+## Flower to monitor celery events
+![Flower](https://quantmill.s3.eu-west-2.amazonaws.com/github/flower.PNG)
 
