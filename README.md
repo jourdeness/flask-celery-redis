@@ -1,5 +1,11 @@
 # flask-celery-redis
-Example of using Flask with Celery and Redis
+Example Flask, Celery, Flower and Redis services with Docker
+
+docker-compose.yml file split into the following services
+- redis
+- website
+- celery
+- flower
 
 ## Instructions
 1. Must have docker installed (docker for desktop).
